@@ -1,0 +1,788 @@
+# Minecraft: Odyssey Lost
+## Mod Completo de Exploración Espacial para Minecraft 1.20.1
+
+![Odyssey Lost Banner](assets/odysseylost/textures/gui/title/background.png)
+
+### 🚀 Descripción
+
+**Minecraft: Odyssey Lost** es un mod completo de exploración espacial que transforma Minecraft en una épica aventura intergaláctica. El jugador comienza como un superviviente de un accidente espacial en un planeta desconocido, con el objetivo de explorar múltiples mundos alienígenas, desarrollar tecnología avanzada y encontrar el camino de regreso a casa.
+
+---
+
+## 📋 Tabla de Contenidos
+
+1. [Características Principales](#características-principales)
+2. [Requisitos e Instalación](#requisitos-e-instalación)
+3. [Narrativa y Progresión](#narrativa-y-progresión)
+4. [Sistemas del Juego](#sistemas-del-juego)
+5. [Planetas y Exploración](#planetas-y-exploración)
+6. [Tecnología y Crafting](#tecnología-y-crafting)
+7. [Supervivencia Avanzada](#supervivencia-avanzada)
+8. [Vida Alienígena](#vida-alienígena)
+9. [Guía de Inicio Rápido](#guía-de-inicio-rápido)
+10. [Configuración](#configuración)
+11. [API para Desarrolladores](#api-para-desarrolladores)
+12. [Créditos y Licencia](#créditos-y-licencia)
+
+---
+
+## 🌟 Características Principales
+
+### ✨ Generación Procedural de Planetas
+- **100+ tipos de planetas únicos** con características procedurales
+- **Biomas alienígenas** con flora y fauna especializada
+- **Condiciones ambientales realistas** (temperatura, radiación, gravedad)
+- **Recursos únicos** por tipo de planeta
+- **Estructuras alienígenas** generadas proceduralmente
+
+### 🚀 Sistema de Naves Espaciales
+- **Construcción modular de naves** con múltiples componentes
+- **Viaje intergaláctico** entre planetas con sistema de combustible
+- **Diferentes tipos de naves**: exploración, combate, transporte
+- **Daño y reparación** de sistemas de nave
+- **Piloto automático** para viajes largos
+
+### 🔬 Supervivencia Espacial Realista
+- **Sistema de oxígeno** con tanques y generadores
+- **Control de temperatura** con trajes especializados
+- **Protección contra radiación** en planetas hostiles
+- **Gravedad variable** que afecta movimiento y combate
+- **Purificación de agua** necesaria en muchos planetas
+
+### 👽 Vida Alienígena Diversa
+- **15+ especies alienígenas** únicas por planeta
+- **Razas inteligentes** con sistemas de comercio y diplomacia
+- **Criaturas hostiles** con IA avanzada
+- **Ecosistemas complejos** con cadenas alimentarias
+- **Evolución temporal** de especies y civilizaciones
+
+---
+
+## 💻 Requisitos e Instalación
+
+### Requisitos Mínimos
+- **Minecraft**: 1.20.1
+- **Fabric Loader**: ≥0.14.21
+- **Java**: 17 o superior
+- **RAM**: 4GB mínimo, 8GB recomendado
+- **Espacio de disco**: 2GB para mod + mundos
+
+### Dependencias Requeridas
+- **Fabric API**: Última versión
+- **Cloth Config API**: ≥11.0.0
+- **Geckolib**: ≥4.2.0 (para animaciones)
+
+### Dependencias Opcionales
+- **ModMenu**: Para acceso fácil a configuración
+- **REI/JEI**: Para recetas de crafting
+- **Roughly Enough Items**: Compatibilidad con recetas
+
+### Instalación
+
+1. **Instalar Fabric Loader** en el launcher de Minecraft
+2. **Descargar dependencias** y colocar en carpeta `mods/`
+3. **Descargar Odyssey Lost** y colocar en carpeta `mods/`
+4. **Ejecutar Minecraft** con perfil Fabric
+5. **Crear nuevo mundo** para activar la cinemática de introducción
+
+```bash
+# Estructura de carpetas recomendada
+.minecraft/
+├── mods/
+│   ├── fabric-api-x.x.x.jar
+│   ├── cloth-config-x.x.x.jar
+│   ├── geckolib-x.x.x.jar
+│   └── odysseylost-1.0.0.jar
+└── config/
+    └── odysseylost.json
+```
+
+---
+
+## 📖 Narrativa y Progresión
+
+### 🎬 Historia Principal
+
+> **Año 2147** - Eres parte de una misión de colonización hacia Kepler-186f. Durante el viaje, tu nave colisiona con un campo de asteroides. El sistema de teletransportación de emergencia te lleva a un planeta desconocido junto con los restos de tu nave.
+
+### Fases de Progresión
+
+#### 🔧 **Fase 1: Supervivencia (Días 1-7)**
+- Explorar los restos de la nave espacial
+- Recolectar componentes básicos y recursos de supervivencia
+- Construir refugio temporal y generador de oxígeno
+- Establecer fuente de agua purificada
+
+#### 🔍 **Fase 2: Exploración (Días 8-30)**
+- Construir escáner planetario y analizar el entorno
+- Explorar biomas del planeta inicial
+- Primer contacto con vida alienígena
+- Desarrollar tecnología alienígena básica
+
+#### 🚀 **Fase 3: Expansión (Días 31-100)**
+- Construir primera nave espacial funcional
+- Viajar a planetas cercanos
+- Establecer bases en múltiples mundos
+- Desarrollar red de teletransportadores
+
+#### 🌌 **Fase 4: Exploración Galáctica (Días 100+)**
+- Construir naves de largo alcance
+- Explorar sistemas solares distantes
+- Contactar civilizaciones alienígenas avanzadas
+- Desarrollar tecnología de viaje hiperespacial
+
+#### 🏠 **Fase 5: Regreso (Endgame)**
+- Reunir componentes para nave de regreso
+- Resolver misterios de civilizaciones antiguas
+- Decisión final: regresar a la Tierra o quedarse
+
+---
+
+## ⚙️ Sistemas del Juego
+
+### 🔋 Sistema de Energía
+
+La energía es fundamental para todas las máquinas avanzadas:
+
+#### Fuentes de Energía
+- **Cristales de Energía**: Fuente básica renovable
+- **Reactores de Fusión**: Para bases grandes
+- **Paneles Solares**: En planetas con estrella
+- **Generadores Geotérmicos**: En planetas volcánicos
+- **Antimateria**: Fuente más avanzada
+
+#### Consumo de Energía
+```yaml
+Máquinas Básicas:
+  - Generador de Oxígeno: 20 E/t
+  - Purificador de Agua: 15 E/t
+  - Escáner de Recursos: 30 E/t
+
+Máquinas Avanzadas:
+  - Ensamblador Molecular: 100 E/t
+  - Teletransportador: 500 E/t
+  - Escudo Planetario: 1000 E/t
+```
+
+### 🌡️ Sistema de Supervivencia
+
+#### Oxígeno
+- **Capacidad base**: 10 minutos
+- **Consumo**: Variable por actividad física
+- **Fuentes**: Generadores, tanques, plantas alienígenas
+- **Efectos de falta**: Daño progresivo, visión borrosa
+
+#### Temperatura
+```yaml
+Rangos de Temperatura:
+  Confortable: 10°C a 30°C
+  Frío: -20°C a 10°C (requiere calefacción)
+  Calor: 30°C a 60°C (requiere refrigeración)
+  Extremo Frío: <-20°C (daño sin protección)
+  Extremo Calor: >60°C (daño sin protección)
+```
+
+#### Radiación
+- **Medida**: 0.0 a 1.0 (0% a 100%)
+- **Efectos**: Náusea, debilidad, daño a largo plazo
+- **Protección**: Trajes antiradiacón, medicinas
+
+### 🔬 Sistema de Tecnología
+
+#### Árbol de Investigación
+```
+Supervivencia Básica
+├── Análisis Ambiental
+│   ├── Escáner Planetario
+│   └── Analizador Atmosférico
+├── Metalurgia Básica
+│   ├── Aleaciones Alienígenas
+│   └── Cristales de Energía
+└── Medicina Espacial
+    ├── Trajes de Supervivencia
+    └── Medicinas Avanzadas
+
+Tecnología Avanzada
+├── Viaje Espacial
+│   ├── Motores de Fusión
+│   ├── Navegación Hiperespacial
+│   └── Escudos Deflectores
+├── Automatización
+│   ├── Robots Mineros
+│   ├── Drones Exploradores
+│   └── IA de Gestión
+└── Comunicaciones
+    ├── Redes Cuánticas
+    ├── Traductores Alienígenas
+    └── Comunicación Intergaláctica
+```
+
+---
+
+## 🪐 Planetas y Exploración
+
+### Tipos de Planetas
+
+#### 🌍 **Planetas Habitables**
+
+**Terrestres**
+- Similares a la Tierra con atmósfera respirable
+- Temperatura: 10°C a 30°C
+- Recursos: Agua, metales básicos, vida abundante
+- Peligros: Tormentas ocasionales
+
+**Selva**
+- Vegetación densa y alta humedad
+- Temperatura: 25°C a 40°C
+- Recursos: Plantas medicinales, madera exótica
+- Peligros: Predadores, enfermedades
+
+**Oceánicos**
+- Cubiertos principalmente por agua
+- Temperatura: 15°C a 25°C
+- Recursos: Peces, algas, minerales submarinos
+- Peligros: Tormentas marítimas, criaturas abisales
+
+#### 🏜️ **Planetas Áridos**
+
+**Desierto**
+- Vastos desiertos con temperaturas extremas
+- Temperatura: 40°C a 80°C (día), -20°C (noche)
+- Recursos: Cristales, metales raros, sal
+- Peligros: Tormentas de arena, deshidratación
+
+**Cañones**
+- Formaciones rocosas espectaculares
+- Temperatura: 20°C a 60°C
+- Recursos: Piedra decorativa, oro, gemas
+- Peligros: Desprendimientos, laberintos naturales
+
+#### ❄️ **Planetas Fríos**
+
+**Congelado**
+- Cubiertos de hielo permanente
+- Temperatura: -80°C a -20°C
+- Recursos: Hielo, gases congelados, metano
+- Peligros: Ventiscas, hipotermia, grietas en hielo
+
+**Ártico**
+- Tundra helada con vida adaptada
+- Temperatura: -40°C a 5°C
+- Recursos: Pieles, aceite, carbón
+- Peligros: Predadores árticos, avalanchas
+
+#### 🌋 **Planetas Volcánicos**
+
+**Volcánico**
+- Actividad volcánica constante
+- Temperatura: 100°C a 300°C
+- Recursos: Obsidiana, azufre, metales raros
+- Peligros: Erupciones, lluvia ácida, gases tóxicos
+
+**Fundido**
+- Océanos de magma y temperaturas extremas
+- Temperatura: 500°C a 1000°C
+- Recursos: Metales fundidos, aleaciones raras
+- Peligros: Calor letal, lluvia de lava
+
+#### ☢️ **Planetas Tóxicos**
+
+**Tóxico**
+- Atmósfera venenosa y lluvia ácida
+- Temperatura: 30°C a 70°C
+- Recursos: Compuestos químicos, ácidos, venenos
+- Peligros: Envenenamiento, corrosión de equipo
+
+**Radiactivo**
+- Alta radiación de cristales energéticos
+- Temperatura: 0°C a 50°C
+- Recursos: Uranio, plutonio, cristales de energía
+- Peligros: Radiación letal, mutaciones
+
+#### 💎 **Planetas Exóticos**
+
+**Cristalino**
+- Formaciones cristalinas gigantes
+- Temperatura: -10°C a 40°C
+- Recursos: Diamantes, esmeraldas, cristales de energía
+- Peligros: Resonancia sónica, laberintos cristalinos
+
+**Flotante**
+- Masas de tierra suspendidas en el aire
+- Temperatura: -20°C a 30°C
+- Recursos: Piedras de levitación, cristales de viento
+- Peligros: Caídas mortales, turbulencias
+
+**Hongos**
+- Dominado por hongos gigantes
+- Temperatura: 15°C a 35°C
+- Recursos: Esporas medicinales, biomateriales
+- Peligros: Esporas tóxicas, hongos carnívoros
+
+### 🗺️ Navegación y Viajes
+
+#### Sistema de Coordenadas
+```
+Formato: [Sistema]:[Planeta]:[Región]
+Ejemplo: Sol-Gamma:Terra-Nova:Bosque-Norte
+```
+
+#### Tipos de Viaje
+- **Local**: Dentro del mismo planeta (rover, jetpack)
+- **Orbital**: Entre lunas de un planeta (shuttle)
+- **Interplanetario**: Entre planetas del sistema (nave básica)
+- **Interestelar**: Entre sistemas solares (hiperpropulsión)
+
+#### Combustible y Consumo
+```yaml
+Distancias y Combustible:
+  Local (0-1000 km): 0 combustible
+  Orbital (1000-10000 km): 1 célula hidrógeno
+  Interplanetario (10000-1M km): 5-20 células
+  Interestelar (1M+ km): Núcleo de antimateria
+```
+
+---
+
+## 🔧 Tecnología y Crafting
+
+### Estaciones de Trabajo
+
+#### 🔨 **Banco de Trabajo Alienígena**
+Versión mejorada del banco normal que permite crafting de tecnología básica.
+
+```yaml
+Recetas Ejemplo:
+  Escáner Planetario:
+    - 3x Cristal de Energía
+    - 2x Procesador Básico
+    - 1x Pantalla Holográfica
+    - 1x Carcasa de Metal Alienígena
+```
+
+#### ⚗️ **Ensamblador Molecular**
+Máquina avanzada para crear componentes complejos átomo por átomo.
+
+```yaml
+Recetas Avanzadas:
+  Motor Hiperespacial:
+    Entrada:
+      - 5x Aleación Cuántica
+      - 3x Núcleo de Antimateria  
+      - 1x Cristal Temporal
+    Energía: 50000 EU
+    Tiempo: 10 minutos
+```
+
+#### 🧪 **Laboratorio Alienígena**
+Para investigar artefactos alienígenas y desbloquear nuevas tecnologías.
+
+### Materiales y Recursos
+
+#### Materiales Básicos
+- **Metal Alienígena**: Material de construcción principal
+- **Titanio**: Para estructuras resistentes
+- **Cristales de Energía**: Almacenamiento de energía
+- **Componentes Electrónicos**: Para dispositivos avanzados
+
+#### Materiales Raros
+- **Materia Exótica**: Para tecnología de punta
+- **Antimateria**: Combustible de alta energía
+- **Aleaciones Cuánticas**: Materiales casi indestructibles
+- **Cristales Temporales**: Para manipulación del tiempo
+
+#### Recursos Orgánicos
+- **Plantas Alienígenas**: Medicina y oxígeno
+- **Biomateriales**: Para biotecnología
+- **Esporas**: Para cultivos espaciales
+- **Proteínas Sintéticas**: Alimento de larga duración
+
+### Herramientas y Armas
+
+#### 🔧 Herramientas
+```yaml
+Pico Cuántico:
+  - Durabilidad: 5000 usos
+  - Velocidad: 12.0
+  - Nivel de Minería: 5 (puede minar cualquier cosa)
+  - Especial: Teletransporta minerales al inventario
+
+Multiherramienta:
+  - Cambia entre pico, pala, hacha y azada
+  - Durabilidad compartida: 3000 usos
+  - Eficiencia: 8.0
+```
+
+#### ⚔️ Armas de Energía
+```yaml
+Rifle de Plasma:
+  - Daño: 12 ♥♥♥♥♥♥
+  - Alcance: 100 bloques
+  - Munición: Células de plasma (64 disparos)
+  - Especial: Atraviesa armadura ligera
+
+Cañón de Iones:
+  - Daño: 25 ♥♥♥♥♥♥♥♥♥♥♥♥♥
+  - Alcance: 200 bloques
+  - Tiempo de carga: 5 segundos
+  - Especial: Daño en área, desactiva electrónicos
+```
+
+---
+
+## 🛡️ Supervivencia Avanzada
+
+### Sistemas de Soporte Vital
+
+#### Trajes Espaciales
+
+**Traje Básico**
+```yaml
+Protección:
+  - Oxígeno: 30 minutos
+  - Temperatura: -30°C a 50°C
+  - Radiación: Hasta 0.3
+  - Armadura: 6 ♦♦♦
+Componentes: 4 piezas (casco, pecho, piernas, botas)
+```
+
+**Traje Térmico**
+```yaml
+Protección:
+  - Oxígeno: 45 minutos
+  - Temperatura: -80°C a 150°C
+  - Radiación: Hasta 0.2
+  - Armadura: 8 ♦♦♦♦
+Especial: Regulación automática de temperatura
+```
+
+**Traje Antirradiación**
+```yaml
+Protección:
+  - Oxígeno: 60 minutos
+  - Temperatura: -20°C a 80°C
+  - Radiación: Hasta 0.9
+  - Armadura: 7 ♦♦♦♦
+Especial: Regeneración lenta de salud
+```
+
+#### Jetpack
+```yaml
+Jetpack Básico:
+  - Combustible: 5 minutos de vuelo
+  - Velocidad: 2x velocidad de sprint
+  - Altura máxima: 256 bloques
+  - Tipo de combustible: Células de hidrógeno
+
+Jetpack Avanzado:
+  - Combustible: 15 minutos de vuelo
+  - Velocidad: 3x velocidad de sprint  
+  - Altura máxima: Ilimitada
+  - Especial: Vuelo orbital básico
+```
+
+### Medicina Espacial
+
+#### Efectos de Estado Únicos
+
+**Envenenamiento por Radiación**
+- Duración: Variable según exposición
+- Efectos: Náusea, debilidad, daño continuo
+- Cura: Medicina antirradiación, tiempo en ambiente seguro
+
+**Hipotermia**
+- Causa: Exposición a frío extremo
+- Efectos: Movimiento lento, visión reducida
+- Cura: Calentamiento gradual, bebidas calientes
+
+**Mal de Altura Cero-G**
+- Causa: Gravedad muy baja (<0.2g)
+- Efectos: Desorientación, náusea
+- Cura: Adaptación temporal, medicinas estabilizadoras
+
+#### Medicina Alienígena
+```yaml
+Inyector Médico:
+  - Usos: 10
+  - Efecto: Cura 6 ♥♥♥ instantáneamente
+  - Tiempo de recarga: 30 segundos
+
+Píldoras Antirradiación:
+  - Efecto: Inmunidad temporal a radiación (10 min)
+  - Efectos secundarios: Náusea leve
+
+Estimulante Alienígena:
+  - Efecto: Velocidad +50%, Fuerza +25% (5 min)
+  - Riesgo: Adicción tras uso prolongado
+```
+
+---
+
+## 👽 Vida Alienígena
+
+### Criaturas Hostiles
+
+#### 🛸 **Sonda Alienígena**
+```yaml
+Estadísticas:
+  - Vida: 40 ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+  - Daño: 8 ♥♥♥♥
+  - Velocidad: Rápida (vuelo)
+  - IA: Exploración, ataque en grupo
+
+Comportamiento:
+  - Patrulla áreas en grupos de 2-4
+  - Escanea al jugador antes de atacar
+  - Llama refuerzos si es dañada
+  - Drops: Tecnología alienígena, núcleos de energía
+```
+
+#### 🕷️ **Araña Espacial**
+```yaml
+Estadísticas:
+  - Vida: 60 ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+  - Daño: 12 ♥♥♥♥♥♥ + veneno
+  - Velocidad: Muy rápida
+  - IA: Emboscada, escalada de paredes
+
+Habilidades:
+  - Invisibilidad temporal en cristales
+  - Veneno paralizante (3 segundos)
+  - Construcción de telarañas de energía
+  - Drops: Seda cristalina, veneno alienígena
+```
+
+### Criaturas Pacíficas
+
+#### 🎐 **Medusa Flotante**
+```yaml
+Estadísticas:
+  - Vida: 20 ♥♥♥♥♥♥♥♥♥♥
+  - Comportamiento: Pasivo
+  - Hábitat: Planetas con baja gravedad
+  - IA: Flotación lenta, huida al ser atacada
+
+Utilidad:
+  - Proporciona luz natural (nivel 10)
+  - Se puede domesticar con cristales de energía
+  - Una vez domesticada, sigue al jugador
+  - Drops: Gel luminoso, núcleo flotante
+```
+
+### Razas Inteligentes
+
+#### 🔮 **Los Cristalianos**
+```yaml
+Características:
+  - Origen: Planetas cristalinos
+  - Tecnología: Manipulación de cristales
+  - Personalidad: Lógicos, pacíficos
+  - Idioma: Resonancia cristalina
+
+Comercio:
+  Compran:
+    - Metales básicos
+    - Tecnología primitiva
+    - Artefactos orgánicos
+  
+  Venden:
+    - Cristales de energía raros
+    - Tecnología de resonancia
+    - Mapas estelares
+    - Medicina regenerativa
+```
+
+#### 🌱 **Los Esporanos**
+```yaml
+Características:
+  - Origen: Planetas de hongos
+  - Tecnología: Biotecnología avanzada
+  - Personalidad: Colectivistas, sabios
+  - Idioma: Comunicación química
+
+Comercio:
+  Compran:
+    - Material orgánico
+    - Tecnología de reciclaje
+    - Semillas y esporas
+  
+  Venden:
+    - Medicina biológica
+    - Purificadores orgánicos
+    - Plantas de oxígeno
+    - Alimentos sintéticos
+```
+
+---
+
+## 🎮 Guía de Inicio Rápido
+
+### Primeros 10 Minutos
+
+1. **Explorar la cápsula de escape** - Recoger componentes básicos
+2. **Encontrar agua** - Prioridad número uno para supervivencia
+3. **Construir refugio temporal** - Protección contra ambiente hostil
+4. **Activar generador de oxígeno** - Si el planeta no tiene atmósfera
+5. **Recoger recursos básicos** - Metal alienígena, cristales de energía
+
+### Primera Hora
+
+1. **Construir escáner planetario** - Para localizar recursos
+2. **Establecer base básica** - Con almacenamiento y camas
+3. **Explorar área local** - Mapear 500 bloques alrededor
+4. **Primer contacto** - Con vida alienígena pacífica
+5. **Investigar ruinas cercanas** - Para tecnología avanzada
+
+### Primer Día (Objetivos)
+
+1. **Base segura establecida** con todos los sistemas básicos
+2. **Mapa del planeta inicial** completo al 50%
+3. **Primera tecnología alienígena** investigada
+4. **Contacto diplomático** con al menos una raza
+5. **Recursos para construir nave** parcialmente reunidos
+
+### Recetas Básicas Esenciales
+
+#### Escáner Planetario
+```
+[Cristal] [Procesador] [Cristal]
+[Metal  ] [Pantalla ] [Metal  ]
+[Cristal] [Procesador] [Cristal]
+```
+
+#### Generador de Oxígeno
+```
+[Metal] [Tanque] [Metal]
+[Motor] [Núcleo] [Motor]
+[Metal] [Filtro] [Metal]
+```
+
+#### Traje Espacial Básico (Casco)
+```
+[Cristal] [Cristal] [Cristal]
+[Metal  ] [       ] [Metal  ]
+[       ] [       ] [       ]
+```
+
+---
+
+## ⚙️ Configuración
+
+### Archivo de Configuración Principal
+
+El mod incluye un sistema de configuración completo accesible desde el menú de configuración de Fabric o editando `config/odysseylost.json`:
+
+```json
+{
+  "general": {
+    "enableIntroductionCinematic": true,
+    "showPlanetaryCoordinates": true,
+    "enableSpaceSounds": true,
+    "spaceParticleDetail": 2,
+    "language": "es"
+  },
+  
+  "planets": {
+    "maxPlanets": 100,
+    "generationRadius": 50000,
+    "minPlanetDistance": 1000,
+    "enableAlienRaces": true,
+    "alienStructureFrequency": 3,
+    "enableVariableGravity": true,
+    "specialPlanetRarity": 5
+  },
+  
+  "survival": {
+    "enableOxygenSystem": true,
+    "oxygenConsumptionRate": 3,
+    "enableTemperatureEffects": true,
+    "enableRadiationSystem": true,
+    "survivalDifficulty": 3,
+    "dehydrationTime": 20,
+    "autoWaterPurification": false
+  },
+  
+  "ships": {
+    "fuelConsumption": 3,
+    "maxShipSpeed": 10,
+    "enableCollisionDamage": true,
+    "baseShipInventorySize": 54,
+    "hyperspaceChargeTime": 15,
+    "enableAutopilot": true
+  },
+  
+  "performance": {
+    "planetRenderDistance": 64,
+    "maxEntitiesPerPlanet": 200,
+    "optimizeTerrainGeneration": true,
+    "useThreadedGeneration": true,
+    "planetCacheMemoryLimit": 256,
+    "cacheCleanupFrequency": 120
+  }
+}
+```
+
+### Configuración de Dificultad
+
+#### Supervivencia Fácil
+- Oxígeno se consume 50% más lento
+- Temperaturas extremas causan menos daño
+- Más recursos disponibles en planetas
+- Naves consumen menos combustible
+
+#### Supervivencia Normal (Por Defecto)
+- Balance estándar de todos los sistemas
+- Experiencia diseñada por los desarrolladores
+
+#### Supervivencia Difícil
+- Oxígeno se consume 50% más rápido
+- Temperaturas extremas son letales rápidamente
+- Recursos más escasos
+- Criaturas alienígenas más agresivas
+
+#### Modo Realista
+- Un solo tanque de oxígeno, sin regeneración
+- Muerte permanente (hardcore)
+- Sin respawn en planetas hostiles
+- Comunicación alienígena requiere traducción
+
+---
+
+## 👨‍💻 API para Desarrolladores
+
+### Creación de Planetas Personalizados
+
+```java
+// Registrar nuevo tipo de planeta
+public static final PlanetType CUSTOM_PLANET = PlanetType.builder()
+    .name("Mi Planeta Personalizado")
+    .hasAtmosphere(true)
+    .gravityRange(0.8f, 1.2f)
+    .temperatureRange(-10, 40)
+    .radiationRange(0.0f, 0.1f)
+    .commonBiomes("mi_bioma_personalizado", "otro_bioma")
+    .commonResources("mi_recurso", "otro_recurso")
+    .primaryColor(0x123456)
+    .build();
+
+// Registrar generador personalizado de planetas
+PlanetRegistry.registerGenerator(CUSTOM_PLANET, MyCustomPlanetGenerator::new);
+```
+
+### Añadir Nuevas Especies Alienígenas
+
+```java
+// Entidad personalizada
+public class MyAlienEntity extends LivingEntity {
+    public MyAlienEntity(EntityType<?> entityType, World world) {
+        super(entityType, world);
+    }
+    
+    @Override
+    protected void initGoals() {
+        this.goalSelector.add(1, new WanderAroundGoal(this, 1.0));
+        this.goalSelector.add(2, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+    }
+}
+
+// Regist
